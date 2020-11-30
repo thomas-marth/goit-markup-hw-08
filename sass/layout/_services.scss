@@ -1,0 +1,52 @@
+@media screen and (max-width: 1199px) {
+  .services {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .services {
+    padding-bottom: 94px;
+  }
+
+  .service-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .service-item {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .service-overlay {
+    position: absolute;
+    margin: 0;
+    width: 370px;
+    min-height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding: 0;
+    bottom: 0;
+  }
+
+  .service-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    color: $primary-bg-color;
+    text-align: center;
+    margin: 27px 0;
+  }
+
+  .service-img {
+    display: block;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,56 @@
+.filters-list {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  & .filters-btn {
+    margin-top: 15px;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+  & button {
+    color: $secondary-text-color;
+    background-color: $secondary-bg-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    min-width: 73px;
+    padding: 6px 22px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  & button:hover,
+  & button:focus {
+    color: $primary-bg-color;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filters-list {
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filters-list {
+    margin: 0 0 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filters-list {
+    margin: 0 0 50px;
+  }
+}

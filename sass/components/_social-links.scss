@@ -1,0 +1,69 @@
+// OUR TEAM
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-links {
+  display: flex;
+  background-color: $primary-bg-color;
+  border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-links:hover,
+.social-links:focus {
+  background-color: $accent-color;
+}
+
+.social-items:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icons {
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icons:hover,
+.social-icons:focus {
+  fill: $primary-bg-color;
+}
+
+// // FOOTER
+
+.social-links-footer {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.social-items:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icon-footer {
+  width: 44px;
+  height: 44px;
+  fill: #fff;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: $primary-bg-color;
+  }
+}

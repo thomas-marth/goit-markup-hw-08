@@ -1,0 +1,52 @@
+.logo {
+  display: inline-block;
+  color: $accent-color;
+  font-family: Raleway, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  // margin-bottom: 16px;
+
+  &-accent {
+    display: inline-block;
+    color: #000;
+  }
+
+  footer & {
+    display: inline-block;
+    margin-right: 0;
+    padding: 0;
+    color: $accent-color;
+
+    &-accent {
+      color: $primary-bg-color;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 81px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.2;
+    margin-right: 93px;
+    padding: 0;
+
+    footer & {
+      display: inline-block;
+      margin-right: 0;
+      color: $accent-color;
+
+      &-accent {
+        color: $primary-bg-color;
+      }
+    }
+  }
+}

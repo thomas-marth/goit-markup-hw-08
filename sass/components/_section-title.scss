@@ -1,0 +1,21 @@
+.section-title {
+  color: $secondary-text-color;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .section-title {
+    font-size: 28px;
+    line-height: 1.18;
+    margin: 0 0 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.16;
+    margin: 0 0 50px;
+  }
+}

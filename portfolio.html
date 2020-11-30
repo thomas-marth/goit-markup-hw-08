@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио | WebStudio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/portfolio.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="page-header">
+      <div class="container header">
+        <nav class="header-nav">
+          <a href="./" class="logo"
+            >Web<span class="logo-accent">Studio</span></a
+          >
+          <button type="button" class="hamburger-btn" data-menu-button>
+            <svg width="40" height="40" aria-label="Кнопка мобильного меню">
+              <use
+                class="menu-icon"
+                href="./images/icons/sprite.svg#icon-menu_40px"
+              ></use>
+              <use
+                class="menu-icon-close"
+                href="./images/icons/sprite.svg#icon-close_40px"
+              ></use>
+            </svg>
+          </button>
+
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a href="./" class="header-nav-link">Студия</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="./portfolio.html" class="header-nav-link current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="header-nav-item">
+              <a href="" class="header-nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header-contact-list">
+          <li class="header-contact-item">
+            <a href="mailto:info@devstudio.com" class="header-contact-link">
+              <svg class="icon-contacts" width="16" height="12">
+                <use href="./images/icons/sprite.svg#icon-envelope"></use>
+              </svg>
+              <svg class="icon-contacts-tablet" width="14" height="10">
+                <use href="./images/icons/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header-contact-item">
+            <a href="tel:+380961111111" class="header-contact-link">
+              <svg class="icon-contacts" width="10" height="16">
+                <use href="./images/icons/sprite.svg#icon-smartphone"></use>
+              </svg>
+              <svg class="icon-contacts-tablet" width="10" height="14">
+                <use href="./images/icons/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="portfolio">
+        <div class="container">
+          <!-- Filters -->
+
+          <ul class="filters-list">
+            <li class="filters-btn"><button type="button">Все</button></li>
+            <li class="filters-btn">
+              <button type="button">Веб-сайты</button>
+            </li>
+            <li class="filters-btn">
+              <button type="button">Приложения</button>
+            </li>
+            <li class="filters-btn"><button type="button">Дизайн</button></li>
+            <li class="filters-btn">
+              <button type="button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <!-- Portfolio -->
+
+          <ul class="project-list">
+            <li class="project-cards">
+              <a href="" class="project-item">
+                <div class="project-thumb">
+                  <img
+                    class="project-img"
+                    src="./images/technokryak.webp"
+                    alt="дисплей ноутбука с демонстрацией сайта Технокряк"
+                  />
+                  <p class="project-description">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <div class="project-content-box">
+                  <h3 class="project-title">Технокряк</h3>
+                  <p class="project-type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-cards">
+              <a href="" class="project-item">
+                <div class="project-thumb">
+                  <img
+                    class="project-img"
+                    src="./images/poster.webp"
+                    alt="Два баскетболиста из команд New Orleans и Golden Star сражаются за мяч"
+                  />
+                  <p class="project-description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ut, omnis totam. Unde doloribus quo sequi fuga quibusdam,
+                    id, nisi eveniet nobis facilis assumenda eaque
+                  </p>
+                </div>
+                <div class="project-content-box">
+                  <h3 class="project-title">Постер NewOrlean & GoldenStar</h3>
+                  <p class="project-type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-cards">
+              <a href="" class="project-item">
+                <div class="project-thumb">
+                  <img
+                    class="project-img"
+                    src="./images/seafood.webp"
+                    alt="логотип ресторана seafood"
+                  />
+                  <p class="project-description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ut, omnis totam. Unde doloribus quo sequi fuga quibusdam,
+                    id, nisi eveniet nobis facilis assumenda eaque
+                  </p>
+                </div>
+                <div class="project-content-box">
+                  <h3 class="project-title">Ресторан Seafood</h3>
+                  <p class="project-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-cards">
+              <a href="" class="project-item">
+                <div class="project-thumb">
+                  <img
+                    class="project-img"
+                    src="./images/prime.webp"
+                    alt="Наушники черного цвета"
+                  />
+                  <p class="project-description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ut, omnis totam. Unde doloribus quo sequi fuga quibusdam,
+                    id, nisi eveniet nobis facilis assumenda eaque
+                  </p>
+                </div>
+                <div class="project-content-box">
+                  <h3 class="project-title">Проект Prime</h3>
+                  <p class="project-type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-cards">
+              <a href="" class="project-item">
+                <div class="project-thumb">
+                  <img
+                    class="project-img"
+                    src="./images/boxes.webp"
+                    alt="Две картонных коробки белого и коричневого цвета"
+                  />
+                  <p class="project-description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ut, omnis totam. Unde doloribus quo sequi fuga quibusdam,
+                    id, nisi eveniet nobis facilis assumenda eaque
+                  </p>
+                </div>
+                <div class="project-content-box">
+                  <h3 class="project-title">Проект Boxes</h3>
+                  <p class="project-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-cards">
+              <a href="" class="project-item">
+                <div class="project-thumb">
+                  <img
+                    class="project-img"
+                    src="./images/inspiration.webp"
+                    alt="Интерфейс сайта Inspiration has no Borders на экране монитора"
+                  />
+                  <p class="project-description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ut, omnis totam. Unde doloribus quo sequi fuga quibusdam,
+                    id, nisi eveniet nobis facilis assumenda eaque
+                  </p>
+                </div>
+                <div class="project-content-box">
+                  <h3 class="project-title">Inspiration has no Borders</h3>
+                  <p class="project-type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-cards">
+              <a href="" class="project-item">
+                <div class="project-thumb">
+                  <img
+                    class="project-img"
+                    src="./images/limited-edition.webp"
+                    alt="разворот журнала Limited Edition"
+                  />
+                  <p class="project-description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ut, omnis totam. Unde doloribus quo sequi fuga quibusdam,
+                    id, nisi eveniet nobis facilis assumenda eaque
+                  </p>
+                </div>
+                <div class="project-content-box">
+                  <h3 class="project-title">Издание Limited Edition</h3>
+                  <p class="project-type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-cards">
+              <a href="" class="project-item">
+                <div class="project-thumb">
+                  <img
+                    class="project-img"
+                    src="./images/lab.webp"
+                    alt="белый ярлык на веревке с надписью Label Tag"
+                  />
+                  <p class="project-description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ut, omnis totam. Unde doloribus quo sequi fuga quibusdam,
+                    id, nisi eveniet nobis facilis assumenda eaque
+                  </p>
+                </div>
+                <div class="project-content-box">
+                  <h3 class="project-title">Проект LAB</h3>
+                  <p class="project-type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-cards">
+              <a href="" class="project-item">
+                <div class="project-thumb">
+                  <img
+                    class="project-img"
+                    src="./images/growing-business.webp"
+                    alt="Демонстрация сайта Growing Business на экране ноутбука"
+                  />
+                  <p class="project-description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ut, omnis totam. Unde doloribus quo sequi fuga quibusdam,
+                    id, nisi eveniet nobis facilis assumenda eaque
+                  </p>
+                </div>
+                <div class="project-content-box">
+                  <h3 class="project-title">Growing Business</h3>
+                  <p class="project-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="container">
+        <div class="footer-cta-wrapper">
+          <div class="adress-wrapper">
+            <a href="./" class="logo"
+              >Web<span class="logo-accent">Studio</span></a
+            >
+            <address>
+              <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
+              <a href="mailto:info@example.com" class="footer-contact-link"
+                >info@example.com</a
+              ><br />
+              <a href="tel:+380991111111" class="footer-contact-link"
+                >+38 099 111 11 11</a
+              >
+            </address>
+          </div>
+
+          <div class="footer-social-wrapper">
+            <h3 class="footer-cta-title">присоединяйтесь</h3>
+            <ul class="social-list">
+              <li class="social-items">
+                <a class="social-links-footer" href="">
+                  <svg class="social-icon-footer">
+                    <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-items">
+                <a class="social-links-footer" href="">
+                  <svg class="social-icon-footer">
+                    <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-items">
+                <a class="social-links-footer" href="">
+                  <svg class="social-icon-footer">
+                    <use href="./images/icons/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-items">
+                <a class="social-links-footer" href="">
+                  <svg class="social-icon-footer">
+                    <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-subscribe-wrapper">
+          <h3 class="footer-cta-title">Подпишитесь на рассылку</h3>
+
+          <form action="" class="footer-subscribe-form">
+            <label for="mail"></label>
+            <input
+              type="email"
+              name="email"
+              id="mail"
+              class="footer-form-input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="btn">
+              Подписаться
+              <svg class="telegram-icon" width="24" height="24">
+                <use href="./images/icons/sprite.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- End Footer -->
+    <script>
+      (() => {
+        const menuBtnRef = document.querySelector('[data-menu-button]');
+        const mobileMenuRef = document.querySelector('[data-menu]');
+        menuBtnRef.addEventListener('click', () => {
+          const expanded =
+            menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+          menuBtnRef.classList.toggle('is-open');
+          menuBtnRef.setAttribute('aria-expanded', !expanded);
+          mobileMenuRef.classList.toggle('is-open');
+        });
+      })();
+    </script>
+  </body>
+</html>
