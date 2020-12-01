@@ -564,8 +564,14 @@ footer .logo-accent {
 .project-img,
 .project-img-mobile {
   display: block;
+  max-width: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
+}
+
+img {
+  display: block;
 }
 
 .project-title {
@@ -689,19 +695,23 @@ footer .logo-accent {
     padding: 0;
   }
   .project-img {
-    width: 370px;
+    width: 100%;
   }
   .project-cards {
     margin-right: 30px;
     margin-bottom: 30px;
     padding-bottom: 0px;
-    min-width: 370px;
+    max-width: 100%;
+    height: 404px;
   }
   .project-cards:nth-child(3n) {
     margin-right: 0;
   }
   .project-cards:nth-last-child(-n + 3) {
     margin-bottom: 0;
+  }
+  .project-cards img {
+    display: block;
   }
 }
 
