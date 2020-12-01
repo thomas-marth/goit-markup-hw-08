@@ -3,8 +3,7 @@
   overflow: hidden;
 }
 
-.project-img,
-.project-img-mobile {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -12,9 +11,9 @@
   padding: 0;
 }
 
-img {
-  display: block;
-}
+// img {
+//   display: block;
+// }
 
 .project-title {
   color: $secondary-text-color;
