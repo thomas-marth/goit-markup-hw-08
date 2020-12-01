@@ -146,9 +146,17 @@
   margin-bottom: 60px;
 }
 
-.nav-item-mobile:nth-child(2) {
-  margin-top: 40px;
-  margin-bottom: 38px;
+// .nav-item-mobile:nth-child(2) {
+//   margin-top: 40px;
+//   margin-bottom: 38px;
+// }
+
+.nav-item-mobile:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.nav-item-mobile .current {
+  margin-bottom: 14px;
 }
 
 .contact-link-mobile {

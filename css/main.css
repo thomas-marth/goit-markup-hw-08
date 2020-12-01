@@ -571,9 +571,12 @@ footer .logo-accent {
   margin-bottom: 60px;
 }
 
-.nav-item-mobile:nth-child(2) {
-  margin-top: 40px;
-  margin-bottom: 38px;
+.nav-item-mobile:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.nav-item-mobile .current {
+  margin-bottom: 14px;
 }
 
 .contact-link-mobile {
@@ -1103,12 +1106,21 @@ footer .logo-accent {
 }
 
 .clients {
-  margin-bottom: 60px;
+  padding-bottom: 45px;
+}
+
+.clients .section-title {
+  margin-bottom: 15px;
 }
 
 .clients-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+.clients-item {
+  width: calc((100% - 60px) / 2);
+  margin: 15px;
 }
 
 .clients-icon {
@@ -1126,6 +1138,7 @@ footer .logo-accent {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition-duration: 250ms;
@@ -1146,61 +1159,25 @@ footer .logo-accent {
   fill: #2196f3;
 }
 
-@media screen and (min-width: 430px) and (max-width: 767px) {
-  .clients-item:nth-child(2n + 1) {
-    margin-right: 30px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .clients-item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .clients-item {
-    display: flex;
-  }
-  .clients-links {
-    width: 210px;
-    height: 90px;
-  }
-  .clients-item:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .clients-item {
-    display: flex;
-  }
-  .clients-links {
-    width: 226px;
-    height: 90px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .clients-item:nth-child(3n + 2) {
-    margin-right: 30px;
-    margin-left: 30px;
-  }
-  .clients-item:nth-child(-n + 3) {
-    margin-bottom: 30px;
+    width: calc((100% - 90px) / 3);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients {
-    margin-bottom: 94px;
+    padding-bottom: 79px;
   }
-  .clients-links {
-    width: 170px;
-    height: 90px;
+  .clients-list {
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
-  .clients-item:not(:last-child) {
-    margin-right: 30px;
+  .clients-item {
+    width: calc((100% - 90) / 6);
+  }
+  .clients .section-title {
+    margin-bottom: 35px;
   }
 }
 
