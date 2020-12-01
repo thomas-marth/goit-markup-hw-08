@@ -1152,6 +1152,10 @@ footer .logo-accent {
   margin-bottom: 15px;
 }
 
+.clients .container {
+  padding: 0;
+}
+
 .clients-list {
   display: flex;
   flex-wrap: wrap;
@@ -1213,7 +1217,7 @@ footer .logo-accent {
     justify-content: space-between;
   }
   .clients-item {
-    width: calc((100% - 90) / 6);
+    width: calc((100% - 90px) / 6);
   }
   .clients .section-title {
     margin-bottom: 35px;
