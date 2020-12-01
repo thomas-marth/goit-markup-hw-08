@@ -18,10 +18,10 @@
     margin-bottom: 30px;
   }
 
-  .team-image {
+  .team-cards img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
     background-size: cover;
   }
 
@@ -80,10 +80,9 @@
     flex-wrap: wrap;
   }
 
-  .team-image {
+  .team-cards img {
     display: block;
-    width: 354px;
-    height: 374px;
+    max-width: 354px;
   }
 
   .team-info {
@@ -132,7 +131,7 @@
     display: flex;
   }
 
-  .team-image {
+  .team-cards img {
     width: 270px;
     height: 260px;
   }

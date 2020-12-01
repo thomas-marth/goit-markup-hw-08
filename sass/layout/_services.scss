@@ -45,8 +45,10 @@
     margin: 27px 0;
   }
 
-  .service-img {
+  .service-item img {
     display: block;
     object-fit: cover;
+    width: 100%;
+    height: auto;
   }
 }

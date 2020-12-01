@@ -192,38 +192,58 @@
               <div class="service-overlay">
                 <h3 class="service-title">Десктопные приложения</h3>
               </div>
-              <img
-                class="service-img"
-                src="./images/desktop-applications.jpg"
-                alt="процесс разработки десктопного приложения"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/services/service1.webp    1x,
+                    ./images/services/service1@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/services/service1.jpg"
+                  alt="процесс разработки десктопного приложения"
+                />
+              </picture>
             </li>
             <li class="service-item">
               <div class="service-overlay">
                 <h3 class="service-title">Мобильные приложения</h3>
               </div>
-              <img
-                class="service-img"
-                src="./images/mobile-applications.jpg"
-                alt="процесс разработки мобильного приложения"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/services/service2.webp    1x,
+                    ./images/services/service2@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/services/service2.jpg"
+                  alt="процесс разработки мобильного приложения"
+                />
+              </picture>
             </li>
             <li class="service-item">
               <div class="service-overlay">
                 <h3 class="service-title">Дизайнерские решения</h3>
               </div>
-              <img
-                class="service-img"
-                src="./images/design-solutions.jpg"
-                alt="процесс разработки
-              дизайна"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/services/service3.webp    1x,
+                    ./images/services/service3@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/services/service3.jpg"
+                  alt="процесс разработки дизайна"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -236,13 +256,41 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-cards">
-              <img
-                class="team-image"
-                src="./images/product-designer.jpg"
-                alt="Игорь Демьяненко - Product Designer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-mobile1.webp    1x,
+                    ./images/team/team-mobile1@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-tablet1.webp    1x,
+                    ./images/team/team-tablet1@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/team1.webp    1x,
+                    ./images/team/team1@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/team/team-mobile1.jpg,
+                    ./images/team/team-tablet1.jpg,
+                    ./images/team/team1.jpg
+                  "
+                  src="./images/team/team1.jpg"
+                  alt="Игорь Демьяненко - Product Designer"
+                />
+              </picture>
               <div class="team-info">
                 <h3 class="team-name">Игорь Демьяненко</h3>
                 <p class="team-positions" lang="en">Product Designer</p>
@@ -288,13 +336,41 @@
             </li>
 
             <li class="team-cards">
-              <img
-                class="team-image"
-                src="./images/frontend-developer.jpg"
-                alt="Ольга Репина - Frontend Developer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-mobile2.webp    1x,
+                    ./images/team/team-mobile2@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-tablet2.webp    1x,
+                    ./images/team/team-tablet2@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/team2.webp    1x,
+                    ./images/team/team2@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/team/team-mobile2.jpg,
+                    ./images/team/team-tablet2.jpg,
+                    ./images/team/team2.jpg
+                  "
+                  src="./images/team/team2.jpg"
+                  alt="Ольга Репина - Frontend Developer"
+                />
+              </picture>
               <div class="team-info">
                 <h3 class="team-name">Ольга Репина</h3>
                 <p class="team-positions" lang="en">Frontend Developer</p>
@@ -339,13 +415,41 @@
               </div>
             </li>
             <li class="team-cards">
-              <img
-                class="team-image"
-                src="./images/marketer.jpg"
-                alt="Николай Тарасов - Marketing"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-mobile3.webp    1x,
+                    ./images/team/team-mobile3@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-tablet3.webp    1x,
+                    ./images/team/team-tablet3@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/team3.webp    1x,
+                    ./images/team/team3@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/team/team-mobile3.jpg,
+                    ./images/team/team-tablet3.jpg,
+                    ./images/team/team3.jpg
+                  "
+                  src="./images/team/team3.jpg"
+                  alt="Николай Тарасов - Marketing"
+                />
+              </picture>
               <div class="team-info">
                 <h3 class="team-name">Николай Тарасов</h3>
                 <p class="team-positions" lang="en">Marketing</p>
@@ -391,13 +495,41 @@
             </li>
 
             <li class="team-cards">
-              <img
-                class="team-image"
-                src="./images/ui-designer.jpg"
-                alt="Михаил Ермаков - UI Designer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-mobile4.webp    1x,
+                    ./images/team/team-mobile4@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-tablet4.webp    1x,
+                    ./images/team/team-tablet4@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/team4.webp    1x,
+                    ./images/team/team4@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/team/team-mobile4.jpg,
+                    ./images/team/team-tablet4.jpg,
+                    ./images/team/team4.jpg
+                  "
+                  src="./images/team/team4.jpg"
+                  alt="Михаил Ермаков - UI Designer"
+                />
+              </picture>
               <div class="team-info">
                 <h3 class="team-name">Михаил Ермаков</h3>
                 <p class="team-positions" lang="en">UI Designer</p>

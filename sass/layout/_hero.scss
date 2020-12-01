@@ -1,19 +1,33 @@
 @media screen and (max-width: 767px) {
   .hero {
     background: $footer-bg-color;
-    max-width: 480px;
+
     height: 400px;
     margin-right: auto;
     margin-left: auto;
     padding: 118px 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero-mobile-dark.webp);
-    background-position: center;
-    background-repeat: no-repeat;
+      url(../images/hero/hero-mobile.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-mobile@2x.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
     & .container {
       text-align: center;
@@ -39,14 +53,27 @@
   .hero {
     max-width: 768px;
     height: 400px;
+    margin: 0 auto;
     padding: 118px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero-tablet.webp);
-    margin: 0 auto;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-tablet@2x.jpg);
+    }
 
     &-title {
       color: $primary-bg-color;
@@ -72,10 +99,24 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero-background.jpg);
+      url(../images/hero/hero-desctop.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-desctop@2x.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
     & .container {
       text-align: center;

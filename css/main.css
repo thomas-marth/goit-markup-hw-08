@@ -48,6 +48,10 @@ address {
   font-style: normal;
 }
 
+img {
+  display: block;
+}
+
 button {
   padding: 0;
   border: none;
@@ -719,15 +723,26 @@ footer .logo-accent {
 @media screen and (max-width: 767px) {
   .hero {
     background: #2f303a;
-    max-width: 480px;
     height: 400px;
     margin-right: auto;
     margin-left: auto;
     padding: 118px 15px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile-dark.webp);
-    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile.jpg);
   }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .hero .container {
     text-align: center;
     margin: 0 auto;
@@ -750,10 +765,21 @@ footer .logo-accent {
   .hero {
     max-width: 768px;
     height: 400px;
-    padding: 118px 0;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.webp);
     margin: 0 auto;
+    padding: 118px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.webp);
   }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
   .hero-title {
     color: #fff;
     font-weight: 900;
@@ -772,11 +798,23 @@ footer .logo-accent {
     max-width: 1600px;
     height: 600px;
     padding: 200px 0;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desctop.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desctop@2x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .hero .container {
     text-align: center;
     margin: 0 auto;
@@ -845,7 +883,7 @@ footer .logo-accent {
     justify-content: space-between;
     flex-wrap: wrap;
     align-content: center;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
   .advantage-item {
     width: 354px;
@@ -884,7 +922,7 @@ footer .logo-accent {
     text-transform: uppercase;
   }
   .advantage-text {
-    margin: 0;
+    margin: 0 0 30px 0;
   }
 }
 
@@ -974,9 +1012,11 @@ footer .logo-accent {
     text-align: center;
     margin: 27px 0;
   }
-  .service-img {
+  .service-item img {
     display: block;
     object-fit: cover;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -996,10 +1036,10 @@ footer .logo-accent {
   .team-cards:not(:last-child) {
     margin-bottom: 30px;
   }
-  .team-image {
+  .team-cards img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
     background-size: cover;
   }
   .team-info {
@@ -1049,10 +1089,9 @@ footer .logo-accent {
     display: flex;
     flex-wrap: wrap;
   }
-  .team-image {
+  .team-cards img {
     display: block;
-    width: 354px;
-    height: 374px;
+    max-width: 354px;
   }
   .team-info {
     text-align: center;
@@ -1094,7 +1133,7 @@ footer .logo-accent {
   .team-image {
     display: flex;
   }
-  .team-image {
+  .team-cards img {
     width: 270px;
     height: 260px;
   }

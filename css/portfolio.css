@@ -48,6 +48,10 @@ address {
   font-style: normal;
 }
 
+img {
+  display: block;
+}
+
 button {
   padding: 0;
   border: none;
