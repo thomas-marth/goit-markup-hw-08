@@ -55,7 +55,7 @@
     top: 100%;
     left: 0;
     width: 100%;
-    height: 453px;
+    height: 393px;
     padding: 60px 40px;
     text-align: center;
     font-size: 14px;
@@ -147,7 +147,7 @@
 }
 
 .nav-item-mobile:nth-child(2) {
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 38px;
 }
 
@@ -169,7 +169,7 @@
   }
 }
 
-.contact-item-mobile {
+.contact-item-mobile:first-child {
   margin-bottom: 16px;
 }
 

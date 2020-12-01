@@ -23,7 +23,7 @@
           <a href="./" class="logo"
             >Web<span class="logo-accent">Studio</span></a
           >
-          <button type="button" class="hamburger-btn" data-menu-button>
+          <button type="button" class="hamburger-btn">
             <svg width="40" height="40" aria-label="Кнопка мобильного меню">
               <use
                 class="menu-icon"
@@ -38,12 +38,10 @@
 
           <ul class="header-nav-list">
             <li class="header-nav-item">
-              <a href="./" class="header-nav-link">Студия</a>
+              <a href="" class="header-nav-link current">Студия</a>
             </li>
             <li class="header-nav-item">
-              <a href="./portfolio.html" class="header-nav-link current"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="header-nav-link">Портфолио</a>
             </li>
             <li class="header-nav-item">
               <a href="" class="header-nav-link">Контакты</a>
@@ -75,6 +73,62 @@
             >
           </li>
         </ul>
+
+        <!-- Mobile Navigation -->
+        <div class="container mobile-header">
+          <a href="./" class="logo mobile"
+            >Web<span class="logo-accent mobile">Studio</span></a
+          ><button type="button" class="hamburger-btn" data-menu-button>
+            <svg width="40" height="40" aria-label="Кнопка мобильного меню">
+              <use
+                class="menu-icon"
+                href="./images/icons/sprite.svg#icon-menu_40px"
+              ></use>
+              <use
+                class="menu-icon-close"
+                href="./images/icons/sprite.svg#icon-close_40px"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mobile-menu" data-menu>
+          <nav class="nav-mobile">
+            <ul class="nav-list-mobile">
+              <li class="nav-item-mobile">
+                <a href="./" class="nav-link-mobile">Студия</a>
+              </li>
+              <li class="nav-item-mobile">
+                <a href="./portfolio.html" class="nav-link-mobile current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="nav-item-mobile">
+                <a href="" class="nav-link-mobile">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="mobile-contact-list">
+            <li class="contact-item-mobile">
+              <a href="mailto:info@devstudio.com" class="contact-link-mobile">
+                <svg class="icon-contacts-mobile" width="16" height="11.2">
+                  <use href="./images/icons/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contact-item-mobile">
+              <a href="tel:+380961111111" class="contact-link-mobile">
+                <svg class="icon-contacts-mobile" width="10" height="14.94">
+                  <use href="./images/icons/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- End Mobile Navigation -->
       </div>
     </header>
 
@@ -105,7 +159,7 @@
                 <div class="project-thumb">
                   <img
                     class="project-img"
-                    src="./images/technokryak.webp"
+                    src="./images/technokryak.jpg"
                     alt="дисплей ноутбука с демонстрацией сайта Технокряк"
                   />
                   <p class="project-description">
@@ -125,7 +179,7 @@
                 <div class="project-thumb">
                   <img
                     class="project-img"
-                    src="./images/poster.webp"
+                    src="./images/poster.jpg"
                     alt="Два баскетболиста из команд New Orleans и Golden Star сражаются за мяч"
                   />
                   <p class="project-description">
@@ -145,7 +199,7 @@
                 <div class="project-thumb">
                   <img
                     class="project-img"
-                    src="./images/seafood.webp"
+                    src="./images/seafood.jpg"
                     alt="логотип ресторана seafood"
                   />
                   <p class="project-description">
@@ -165,7 +219,7 @@
                 <div class="project-thumb">
                   <img
                     class="project-img"
-                    src="./images/prime.webp"
+                    src="./images/prime.jpg"
                     alt="Наушники черного цвета"
                   />
                   <p class="project-description">
@@ -185,7 +239,7 @@
                 <div class="project-thumb">
                   <img
                     class="project-img"
-                    src="./images/boxes.webp"
+                    src="./images/boxes.jpg"
                     alt="Две картонных коробки белого и коричневого цвета"
                   />
                   <p class="project-description">
@@ -205,7 +259,7 @@
                 <div class="project-thumb">
                   <img
                     class="project-img"
-                    src="./images/inspiration.webp"
+                    src="./images/inspiration.jpg"
                     alt="Интерфейс сайта Inspiration has no Borders на экране монитора"
                   />
                   <p class="project-description">
@@ -225,7 +279,7 @@
                 <div class="project-thumb">
                   <img
                     class="project-img"
-                    src="./images/limited-edition.webp"
+                    src="./images/limited-edition.jpg"
                     alt="разворот журнала Limited Edition"
                   />
                   <p class="project-description">
@@ -245,7 +299,7 @@
                 <div class="project-thumb">
                   <img
                     class="project-img"
-                    src="./images/lab.webp"
+                    src="./images/lab.jpg"
                     alt="белый ярлык на веревке с надписью Label Tag"
                   />
                   <p class="project-description">
@@ -265,7 +319,7 @@
                 <div class="project-thumb">
                   <img
                     class="project-img"
-                    src="./images/growing-business.webp"
+                    src="./images/growing-business.jpg"
                     alt="Демонстрация сайта Growing Business на экране ноутбука"
                   />
                   <p class="project-description">
